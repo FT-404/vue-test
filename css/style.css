@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open-Sans, sans-serif;
+    background-color: #111121;
+}
+
+
+#co {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+h1 {
+    display: inline-block;
+    float: left;
+    margin-left: 150px;
+}
+
+.count {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    float: right;
+    margin-right: 150px;
+    padding-top: 7px;
+}
+
+#name {
+    display: block;
+    margin-top: 50px;
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    border: 3px solid #6e6e6e;
+    font-size: 25px;
+    padding: 10px 0px 10px 20px;
+    resize: vertical;
+    margin-left: 150px;
+}
+
+#name:focus {
+    border-color: #428038;
+}
+
+#text {
+    display: block;
+    margin-top: 50px;
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    outline: none;
+    border: 3px solid #6e6e6e;
+    font-size: 25px;
+    padding: 10px 0px 10px 20px;
+    resize: vertical;
+    margin-left: 150px;
+}
+
+#text:focus {
+    border: 3px solid #428038;
+}
+
+#sub {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 27px;
+    background-color: rgba(255,255,255,1);
+    border: 2px solid #428038;
+    border-radius: 20px;
+    padding: 10px;
+    color: #428038;
+    cursor: pointer;
+    outline: none;
+}
+
+#sub:hover {
+    background-color: #428038;
+    color: #fff;
+}
+
+hr {
+    width: 500px;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+
+ul {
+    margin-top: 20px;
+    padding-bottom: 200px;
+}
+
+.wrapper {
+    width: 650px;
+    text-align: left;
+    margin-left: 150px;
+}
+
+.card {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    background-color: #e0e0e0;
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    padding-right: 35px;
+    word-break: break-word;
+    margin-left: 0;
+}
+
+.node-text {
+    font-size: 25px;
+}
+
+.card:hover .trash {
+    display: block;
+}
+
+.trash {
+    background-color: rgba(255,255,255,0);
+    border: 0px solid #fff;
+    cursor: pointer;
+    outline: none;
+    padding-left: 50px;
+}
+
+svg:hover {
+    fill: #e01414;
+}
+
+#empty {
+    float: left;
+    margin-left: 150px;
+    font-size: 35px;
+    margin-top: 50px;
+}
