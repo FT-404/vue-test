@@ -150,3 +150,7 @@ svg:hover {
     font-size: 35px;
     margin-top: 50px;
 }
+
+#inp {
+    display: block;
+}
