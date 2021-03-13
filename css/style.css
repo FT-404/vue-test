@@ -154,3 +154,8 @@ svg:hover {
 #inp {
     display: block;
 }
+
+.name {
+    font-size: 30px;
+    font-weight: 600;
+}
