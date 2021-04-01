@@ -13,27 +13,33 @@ body {
 #co {
     display: block;
     margin: auto;
-    text-align: center;
     padding-top: 50px;
     width: 800px;
     background-color: #fff;
     border-radius: 10px;
     margin-top: 100px;
-}
-
-h1 {
-    display: inline-block;
-    float: left;
-    margin-left: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .count {
-    display: inline-block;
     font-size: 20px;
     font-weight: 600;
-    float: right;
-    margin-right: 150px;
+    text-align: right;
     padding-top: 7px;
+}
+
+.zam {
+    color: #000;
+    justify-self: start;
+}
+
+#group_info {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 500px;
+    margin-left: 0px;
 }
 
 #name {
@@ -46,8 +52,6 @@ h1 {
     border: 3px solid #6e6e6e;
     font-size: 25px;
     padding: 10px 0px 10px 20px;
-    resize: vertical;
-    margin-left: 150px;
 }
 
 #name:focus {
@@ -65,7 +69,6 @@ h1 {
     font-size: 25px;
     padding: 10px 0px 10px 20px;
     resize: vertical;
-    margin-left: 150px;
 }
 
 #text:focus {
@@ -74,8 +77,6 @@ h1 {
 
 #sub {
     display: block;
-    margin: auto;
-    margin-top: 30px;
     font-size: 27px;
     background-color: rgba(255,255,255,1);
     border: 2px solid #428038;
@@ -84,6 +85,8 @@ h1 {
     color: #428038;
     cursor: pointer;
     outline: none;
+    margin: auto;
+    margin-top: 30px;
 }
 
 #sub:hover {
@@ -108,7 +111,6 @@ ul {
 .wrapper {
     width: 650px;
     text-align: left;
-    margin-left: 150px;
 }
 
 .card {
@@ -140,7 +142,7 @@ ul {
     padding-left: 50px;
 }
 
-svg:hover {
+.svg:hover {
     fill: #e01414;
 }
 
@@ -151,11 +153,42 @@ svg:hover {
     margin-top: 50px;
 }
 
-#inp {
-    display: block;
+#search {
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 25px;
+    width: 20px;
+    border: 0;
+    background-image: url("../icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    justify-self: end;
 }
 
-.name {
+#search:focus {
+    border: 3px solid #428038;
+    animation-name: search;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes search {
+    0 % {
+        width: 20px;
+    }
+
+    100% {
+        width: 250px;
+        padding: 10px 25px 10px 20px;
+    }
+}
+
+.search-icon {
+    position: absolute;
+}
+
+.name-card {
     font-size: 30px;
     font-weight: 600;
 }
