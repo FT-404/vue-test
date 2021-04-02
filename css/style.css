@@ -40,6 +40,7 @@ body {
     grid-template-rows: 1fr;
     width: 500px;
     margin-left: 0px;
+    align-items: center;
 }
 
 #name {
@@ -191,4 +192,68 @@ ul {
 .name-card {
     font-size: 30px;
     font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    #co {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    #search{
+        width: 60px;
+        background-size: 25px 25px;
+        font-size: 25px;
+    }
+
+    body {
+        width: 425px;
+    }
+
+    #co {
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 425px;
+    }
+
+    #group_info {
+        width: 325px;
+    }
+
+    @keyframes search {
+        0 % {
+            width: 20px;
+        }
+
+        100% {
+            width: 225px;
+            padding: 10px 25px 10px 20px;
+        }
+    }
+
+    #name {
+        width: 325px;
+    }
+
+    #text {
+        width: 325px;
+    }
+
+    hr {
+        width: 325px;
+    }
+
+    .card {
+        width: 325px;
+    }
+
+    .name-card {
+        font-size: 25px;
+    }
+
+    .trash {
+        padding-left: 15px;
+    }
 }
