@@ -288,3 +288,18 @@ ul {
         width: 290px;
     }
 }
+
+@media screen and (max-width: 375px) {
+    body, #co{
+        width: 320px;
+    }
+
+    #co {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    #group_info, #name, #text, .card, hr {
+        width: 230px;
+    }
+}
