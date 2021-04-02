@@ -194,7 +194,7 @@ ul {
     font-weight: 600;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 426px){
     #co {
         margin-top: 0;
     }
@@ -213,6 +213,7 @@ ul {
     }
 
     #co {
+        margin-top: 0;
         padding-left: 50px;
         padding-right: 50px;
         width: 425px;
@@ -228,7 +229,7 @@ ul {
         }
 
         100% {
-            width: 225px;
+            width: 190px;
             padding: 10px 25px 10px 20px;
         }
     }
