@@ -217,6 +217,7 @@ ul {
         padding-left: 50px;
         padding-right: 50px;
         width: 425px;
+        overflow-x: hidden;
     }
 
     #group_info {
