@@ -71,7 +71,7 @@ const app = {
     }
 }
 
-const forComp = Vue.createApp(app)
+const forComp = Vue.createApp(app);
 
 forComp.component('todo-item', {
     template: `<li>gg</li>`

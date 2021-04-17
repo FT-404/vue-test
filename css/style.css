@@ -31,7 +31,7 @@ body {
     font-size: 20px;
     font-weight: 600;
     padding-top: 7px;
-    width: 500px;
+    width: 67%;
     text-align: right;
 }
 
@@ -43,7 +43,7 @@ ul {
 .wrapper {
     display: grid;
     grid-template-columns: auto 1fr;
-    align-content: center;
+    justify-items: center;
     margin-top: 20px;
 
 }
@@ -98,7 +98,7 @@ ul {
 #sub {
     display: block;
     font-size: 27px;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
     border: 2px solid #428038;
     border-radius: 20px;
     padding: 10px;
@@ -120,14 +120,13 @@ hr {
     background-color: black;
     margin: auto;
     margin-top: 30px;
-    
+
 }
 
 .card {
-    display: inline-block;
-    text-align: left;
+
     background-color: #e0e0e0;
-    width: 500px;
+    width: 67%;
     border-radius: 20px;
     padding: 20px;
     padding-right: 35px;
@@ -139,15 +138,26 @@ hr {
     font-size: 25px;
 }
 
+
+.trash {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid #fff;
+    cursor: pointer;
+    outline: none;
+    display: none;
+    float: right;
+}
+
+.card:hover {
+    background-color: rgba(17, 17, 33, .9);
+}
+
 .card:hover .trash {
     display: block;
 }
 
-.trash {
-    background-color: rgba(255,255,255,0);
-    border: 0px solid #fff;
-    cursor: pointer;
-    outline: none;
+.svg {
+    fill: #fff;
 }
 
 .svg:hover {
@@ -182,7 +192,7 @@ hr {
 }
 
 @keyframes search {
-    0 % {
+    0% {
         width: 20px;
     }
 
@@ -201,7 +211,7 @@ hr {
     font-weight: 600;
 }
 
-@media screen and (max-width: 752px){
+@media screen and (max-width: 752px) {
     #co {
         margin-top: 0;
         width: auto;
@@ -210,102 +220,102 @@ hr {
 
 }
 
-/*@media screen and (max-width: 425px) {*/
+@media screen and (max-width: 425px) {
 
-/*    #search {*/
-/*        width: 60px;*/
-/*        background-size: 25px 25px;*/
-/*        font-size: 25px;*/
-/*    }*/
+    #search {
+        width: 60px;
+        background-size: 25px 25px;
+        font-size: 25px;
+    }
 
-/*    body {*/
-/*        width: 425px;*/
-/*    }*/
+    body {
+        width: 425px;
+    }
 
-/*    #co {*/
-/*        margin-top: 0;*/
-/*        width: 425px;*/
-/*        overflow-x: hidden;*/
-/*    }*/
+    #co {
+        margin-top: 0;
+        width: 425px;
+    }
 
-/*    #group_info {*/
-/*        width: 325px;*/
-/*    }*/
+    #group_info {
+        width: 325px;
+    }
 
-/*    @keyframes search {*/
-/*        0 % {*/
-/*            width: 20px;*/
-/*        }*/
+    @keyframes search {
+        0% {
+            width: 20px;
+        }
 
-/*        100% {*/
-/*            width: 190px;*/
-/*            padding: 10px 25px 10px 20px;*/
-/*        }*/
-/*    }*/
+        100% {
+            width: 190px;
+            padding: 10px 25px 10px 20px;
+        }
+    }
 
-/*    #name {*/
-/*        width: 325px;*/
-/*    }*/
+    #name {
+        width: 325px;
+    }
 
-/*    #text {*/
-/*        width: 325px;*/
-/*    }*/
+    #text {
+        width: 325px;
+    }
 
-/*    hr {*/
-/*        width: 325px;*/
-/*    }*/
+    hr {
+        width: 325px;
+    }
 
-/*    .card {*/
-/*        width: 325px;*/
-/*    }*/
+    .card {
+        width: 325px;
+    }
 
-/*    .name-card {*/
-/*        font-size: 25px;*/
-/*    }*/
+    .name-card {
+        font-size: 25px;
+    }
 
-/*    .trash {*/
-/*        padding-left: 15px;*/
-/*    }*/
-/*}*/
+    .trash {
+        padding-left: 15px;
+    }
+}
 
-/*@media screen and (max-width: 375px) {*/
-/*    body {*/
-/*        width: 375px;*/
-/*    }*/
-/*    #co {*/
-/*        width: 375px;*/
+@media screen and (max-width: 375px) {
+    body {
+        width: 375px;
+    }
 
-/*    }*/
+    #co {
+        width: 375px;
 
-/*    .zam {*/
-/*        font-size: 40px;*/
-/*        justify-self: center;*/
-/*    }*/
+    }
 
-/*    #group_info {*/
-/*        grid-template-columns: 1fr;*/
-/*        grid-template-rows: 1fr 1fr;*/
-/*    }*/
+    .zam {
+        font-size: 40px;
+        justify-self: center;
+    }
 
-/*    #group_info, #name, #text, .card, hr {*/
-/*        width: 290px;*/
-/*    }*/
-/*}*/
+    #group_info {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 
-/*@media screen and (max-width: 320px) {*/
-/*    body, #co{*/
-/*        width: 320px;*/
-/*    }*/
+    #group_info, #name, #text, .card, hr {
+        width: 290px;
+    }
+}
 
-/*    #co {*/
+@media screen and (max-width: 320px) {
+    body, #co {
+        width: 320px;
+    }
 
-/*    }*/
+    #co {
 
-/*    #group_info, #name, #text, .card, hr {*/
-/*        width: 230px;*/
-/*    }*/
+    }
 
-/*    #text {*/
-/*        font-size: 21px;*/
-/*    }*/
-/*}*/
+    #group_info, #name, #text, .card, hr {
+        width: 230px;
+    }
+
+    #text {
+        font-size: 21px;
+    }
+}
